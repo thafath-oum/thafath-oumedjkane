@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>robes</title>
+</head>
+
+<style>
+.taille-form{
+    display: flex;
+    gap: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    flex-wrap: wrap;
+    
+}
+.taille{
+    cursor: pointer;
+    padding: 2px ;
+    font-weight: bold;
+    background-color: #ffeef3;
+}
+
+</style>
+<body>
+    <h1><i class="fa-solid fa-heart"></i><b>DRESSES</b><i class="fa-solid fa-heart"></i></h1>
+    <div class="grid">
+        <div class="article">
+        <img src="image/dentail.jpg" alt="robe">
+        <p class="prix-article">Prix:4200 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+      </div>
+
+         <div class="article">
+        <img src="image/white.jpg" alt="robe">
+        <p class="prix-article">Prix:5400 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+        
+        <div class="article">
+        <img src="image/whiteflowery.jpg" alt="robe">
+        <p class="prix-article">Prix:4900 DA</p>
+
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/yellow.jpg" alt="robe">
+        <p class="prix-article">Prix:4800 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/dressrose.jpg" alt="robe">
+        <p class="prix-article">Prix:5900 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/bleu.jpg" alt="robe">
+        <p class="prix-article">Prix:3580 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/pink.jpg" alt="robe">
+        <p class="prix-article">Prix:6600 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/robevert.jpg" alt="robe">
+        <p class="prix-article">Prix:3600 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/rosemini.jpg" alt="robe">
+        <p class="prix-article">Prix:8500 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/rouge.jpg" alt="robe">
+        <p class="prix-article">Prix:3500 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="xl" id="xl" >XL
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+       </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/robebeige.jpg" alt="robe">
+        <p class="prix-article">Prix:3550 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/dressprof.jpg" alt="robe">
+        <p class="prix-article">Prix:6900 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/black.jpg" alt="robe">
+        <p class="prix-article">Prix:2980 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/midi.jpg" alt="robe">
+        <p class="prix-article">Prix:5600 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/dentailnoir.jpg" alt="robe">
+        <p class="prix-article">Prix:4200 DA</p>
+        <form class="taille-form">
+          <label class="taille">
+            <input type="radio" name="taille" value="XS" id="XS">XS 
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="S" id="S" >S
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="M" id="M" >M
+          </label>
+        <br>
+          <label class="taille">
+            <input type="radio" name="taille" value="l" id="l" >L
+          </label>
+        </form>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()"   href="panier.html">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+      </footer>
+        </div>
+
+     
+    <a id="back" href="javascript:history.back()"><i class="fas fa-arrow-left"></i>Back</a>
+      
+
+    </div>
+</body>
+</html>

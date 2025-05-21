@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLG</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <style>
+  .taille-form{
+    display: flex;
+    gap: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    flex-wrap: wrap;
+}
+.taille{
+    cursor: pointer;
+    padding: 2px ;
+    font-weight: bold;
+    background-color: rgb(216, 206, 206);
+}
+
+</style>
+<body>
+ <section class="top-page">
+  <header class="header">
+    <img src="image/logo2.png" alt="logo">
+       <nav class="nav" id="nav">
+        <li><a href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#contact">Contact <i class="fa-solid fa-phone"></i></a></li>
+        <li> <a href="panier.html">Cart<i class="fa-solid fa-cart-shopping"></i></a></li> 
+        <li>
+          <form id="search" style="position: relative;">
+          <input type="text" id="search-input" placeholder="Recherche...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+          <div id="suggect" class="sugg-box"></div>
+        </form>
+        </li>
+        </nav> 
+    </header>
+
+  <div class="landing-page">
+    <h1 class="big"><i>Welcome,Fashion starts here</i></h1>
+    <h2 class="explain"><i>SLG offers a refined selection of dresses,heels,accessories,and chic handbags.<br>All crafted for the elegant and confident woman.</i></h2>
+    <a class="scroll" href="#items">Scroll <i class="fas fa-angle-down"></i></a>
+</div>
+</section>
+
+
+<section class="items" id="items">
+<h3 class="title">Nos Articles</h3>
+  <div class="best">
+    <a href="accessoire.html" class="box acc no-grid zoomable">
+     <div class="it-detaille">
+       <p class="it-name" >Accessoires</p>
+    </div>
+</a>
+    <a href="robes.html"class="box robe no-grid zoomable">
+      <div class="it-detaille">
+            <p class="it-name">Robes</p>
+         </div>
+    </a>
+    <a href="talons.html" class="box talon no-grid zoomable">
+        <div class="it-detaille">
+            <p class="it-name">Talons</p>
+         </div>
+    </a>
+    <a href="sac.html" class="box sac no-grid zoomable">
+        <div class="it-detaille">
+            <p class="it-name">Sacs</p>
+         </div>
+    </a>
+  </div>
+</section>
+
+<h3 class="title">Decouvrir les nouvelles collection</h3>
+
+<section class="all">
+    
+    <div class="article-grid">
+
+     <a class="article-grid1 box img">
+      <div class="it-detaille">
+       <p class="it-name">Robe verte(taille M)</p>
+       <p class="it-price">3600 DA</p>  
+       <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+       </div>
+    </a>
+
+     <a class="article-grid2 box">
+       <div class="it-detaille">
+       <p class="it-name">V.Westwood Watch</p>
+       <p class="it-price">6800 DA</p>  
+       <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+      </div> 
+    </a>
+
+     <a class="article-grid3 box">
+       <div class="it-detaille">
+        <p class="it-name">Robe beige(taille S)</p>
+        <p class="it-price">3550 DA</p> 
+        <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+         
+      </div> 
+    </a>
+
+     <a class="article-grid4 box">
+     <div class="it-detaille">
+       <p class="it-name">Mini kelly</p>
+       <p class="it-price">6500 DA</p>  
+       <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+       
+      </div> 
+    </a>
+
+     <a class="article-grid5 box">
+     <div class="it-detaille">
+        <p class="it-name">Red Coach</p>
+        <p class="it-price">4400 DA</p>  
+        <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+        
+      </div> 
+    </a>
+
+     <a class="article-grid6 box">
+     <div class="it-detaille">
+       <p class="it-name">Robe rose(taille S)</p>
+       <p class="it-price">3450 DA</p>  
+       <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+        
+      </div> 
+    </a>
+
+    <a class="article-grid7 box">
+      <div class="it-detaille">
+        <p class="it-name">Love Cartier</p>
+        <p class="it-price">1900 DA</p>  
+        <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+        
+       </div> 
+     </a>
+     
+    <a class="article-grid8 box">
+      <div class="it-detaille">
+        <p class="it-name">Sunglasses</p>
+        <p class="it-price">2100 DA</p>  
+        <button onclick="window.location.href='paiment.html';" class="btn-acheter">Acheter</button>
+       </div> 
+     </a>
+
+  </div>
+</section>
+
+<footer href="" class="c">
+  <p>SLG.2025 </p>
+  <a class="c" href="cgv.pdf" target="_blank">Conditons general de ventes</a>
+  <a id="contact">Contact:+213457895222</a>
+  <a  class="c" class="up" href="index.html">up <i class="fas fa-angle-up"></i></a>
+</footer>
+
+</body>
+</html>

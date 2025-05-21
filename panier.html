@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Mon panier</title>
+
+</head>
+<body>
+  <h1 style="text-align: center;">Mon panier</h1>
+  <div class="grid" id="panier-container"></div>
+  <p id="montant-total" style="font-size: 18px; font-weight: bold; margin: 20px;"></p>
+
+  <button onclick="viderPanier()" class="btn-acheter"> Vider le panier</button>
+  <button onclick="window.location.href='paiment.html'" id="btn-valider" class="btn-acheter" >Valider le panier</button>
+  <a id="back" href="javascript:history.back()"><i class="fas fa-arrow-left"></i>Back</a>
+
+  <script>
+  // Fonction pour vider le panier
+    function viderPanier() {
+      localStorage.removeItem("panier");
+      location.reload();
+    }
+
+   
+    const panier = JSON.parse(localStorage.getItem("panier")) || [];
+    const container = document.getElementById("panier-container");
+    const montantTotalEl = document.getElementById("montant-total");
+    const btnValider = document.getElementById("btn-valider");
+
+
+    if (panier.length === 0) {
+      container.innerHTML = "<p style='text-align: center;'>Votre panier est vide.</p>";
+      montantTotalEl.textContent = "";
+    } else {
+      let total = 0;
+
+      panier.forEach((article) => {
+        const div = document.createElement("div");
+        div.classList.add("article");
+        div.innerHTML = `
+          <img alt="grid"src="${article.image}"alt="article">
+          <p><strong>Prix :</strong> ${article.prix} DA</p>
+          <p><strong>Taille :</strong> ${article.taille}</p>
+        `;
+        container.appendChild(div);
+        total += parseInt(article.prix) || 0;
+      });
+
+      montantTotalEl.textContent = `Montant total à payer : ${total} DA`;
+    }
+
+    // Rendre le bouton "Valider le panier" inactif si le panier est vide
+
+if (panier.length === 0 && btnValider) {
+  btnValider.disabled = true;
+  btnValider.style.opacity = "0.5";
+  btnValider.style.cursor = "not-allowed";
+}
+
+</script>
+</body>
+</html>

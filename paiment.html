@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiment</title>
+    <style>
+        body{
+            margin:0;
+            justify-content: center ;
+            background-image:url('image/back.jpg') ;
+            background-size: cover;
+            align-items:first center;
+            display: flex;
+            height: 100vh;
+        }
+        form{
+            padding:100px;
+            width: 500px;
+            height:650px;
+            border:2px solid;
+        
+        }
+        input{
+            padding: 10px;
+            margin-top: 5px;
+            border:1px solid;
+            width: 100%;
+        }
+        
+        .liv{
+            display:inline-flex; 
+            gap: 15px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .btn{
+            display: flex;
+            justify-content:flex-end;
+            padding: 30px;
+            gap: 10px;
+        }
+        .btn button{
+            color: #000000;
+            background-color: #967c7c;
+            padding: 5px 20px;
+            font-size: 16px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+      <form>
+    <label for="nom"> <b>Nom et Prenom</b></label>
+    <input type="text" placeholder="entrez votre nom complet" name="nom et prenom" required><br>
+    <br>
+    <label for="email"> E-mail</label>
+    <input type="email" placeholder="entrez votre email" name="email"><br>
+    <br>
+    <label><b> Numero de telephone</b></label>
+    <input type="text" placeholder="entrez votre numero" maxlength="10" required><br>
+    <br>
+    <label><b> Numero de carte</b></label>
+    <input type="text" placeholder="entrez numero de la carte"maxlength="8" required><br>
+    <br>
+    <label><b>Date d expiration</b></label>
+    <input type="month" name="expired" required><br>
+    <br>
+    <label><b>Code de securite</b></label>
+    <input type="text" name="cvv" maxlength="3" required><br>
+    <br>
+    <label><b>Wilaya</b></label>
+    <select id="wilaya">
+    <option value="Wilaya">Wilaya</option>
+        <option>Adrar</option>
+         <option>chlef</option>
+          <option>laghouat</option>
+           <option>oum el bouaghi</option>
+            <option>batna</option>
+             <option>bejaia</option>
+              <option>bechar</option>
+               <option>tbessa</option>
+               <option>tlemcen</option>
+                <option>tiaret</option>
+                 <option>tizi ouzou</option>
+                  <option>Alger</option>
+                   <option>djelfa</option>
+                    <option>jijel</option>
+                     <option>Setif</option>
+                      <option>Skikda</option>
+                       <option>Annaba</option>
+                        <option>Constantine</option>
+                         <option>Mostaganem</option>
+                          <option>Oran</option>
+                           <option>Illizi</option>
+                            <option>Boumerdes</option>
+                             <option>Khenchla</option>
+                              <option>Mila</option>
+                               <option>Tipaza</option>
+                                <option>Souk Ahras</option>
+                                 <option>Ain delfa</option>
+                                  <option>Timimoun</option>
+                                   <option>Bordj baji Mokhtar</option>
+                                   <option>Relizane</option>
+                                    <option>salah</option>
+                                     <option>ghezzam</option> 
+                                     <option>djanet</option>
+                                      <option>El mghir</option>
+                                       <option>el meniaa</option>
+    </select><br>
+    <br>
+    <label><b>Commune</b></label>
+    <input type="text"  required>
+    <br>
+    <br>
+
+    <label><b>Livraison:</b></label><br>
+    <br>
+     <label class="liv">
+      <input type="radio" name="type" value="domicile" id="d" > Domicile  
+    </label>
+    <br>
+    <label class="liv">
+     <input type="radio" name="type" value="bureau" id="b" >Bureau
+    </label>
+
+    <br>
+    <div class="btn">
+      <button type="button" onclick="window.history.back()">Annuler</button>
+      <button type="button" onclick="window.location.href='merci.html'">Payer</button>
+     </div>
+
+
+      </form>
+     
+</body>
+</html>

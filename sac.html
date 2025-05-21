@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>sac</title>
+</head>
+<style>
+.taille-form{
+    display: flex;
+    gap: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    flex-wrap: wrap;
+    
+}
+.taille{
+    cursor: pointer;
+    padding: 2px ;
+    font-weight: bold;
+    background-color: #ffeef3;
+}
+</style>
+<body>
+    <h1><i class="fa-regular fa-heart"></i><b>BAGS</b><i class="fa-regular fa-heart"></i></h1>
+    <div class="grid">
+        <div class="article">
+        <img src="image/bordeaux.JPG" alt="sac">
+        <p class="prix-article">Prix:3200 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+        
+         <div class="article">
+        <img src="image/chanelpink.jpg" alt="sac">
+        <p class="prix-article">Prix:5600 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+        
+        <div class="article">
+        <img src="image/pinkbirkin.jpg" alt="sac">
+        <p class="prix-article">Prix:7200 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/dior.jpg" alt="sac">
+        <p class="prix-article">Prix:6400 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        <div class="article">
+        <img src="image/ladydior.jpg" alt="sac">
+        <p class="prix-article">Prix:6200 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/coach.jpg" alt="sac">
+        <p class="prix-article">Prix:4900 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/polene.JPG" alt="sac">
+        <p class="prix-article">Prix:4600 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/jac.JPG" alt="sac">
+        <p class="prix-article">Prix:2950 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/chanel.jpg" alt="sac">
+        <p class="prix-article">Prix:5400 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/coachb.jpg" alt="sac">
+        <p class="prix-article">Prix:3950 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/minikelly.jpg" alt="sac">
+        <p class="prix-article">Prix:8200 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/green.jpg" alt="sac">
+        <p class="prix-article">Prix:8600 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+
+        
+        <div class="article">
+        <img src="image/minidior.jpg" alt="sac">
+        <p class="prix-article">Prix:6450 DA</p>
+        <footer>
+        <button class="btn-panier"  onclick="ajouteAuPanier()">Ajouter au panier<i class="fa-solid fa-cart-shopping"></i></button>
+        <button onclick="validerEtAller()"  class="btn-acheter" >Buy</button>  
+        </footer>
+        </div>
+        <a id="back" href="javascript:history.back()"><i class="fas fa-arrow-left"></i>Back</a>
+    </div>
+</body>
+</html>
